@@ -11,5 +11,14 @@ source, build scripts, and DevOps workflow to officially support older Windows v
 
 Areas: Windows API, DevOps, and Configuration
 
+## Support Unicode characters in Neutralinojs Windows version
+
+Issue: https://github.com/neutralinojs/neutralinojs/issues/466
+
+Unicode characters work without any issue on Neutralinojs Linux and macOS versions. But, 
+Neutralinojs Windows version doesn't render Unicode characters correctly.
+The goal of this task is to use Windows Unicode APIs and fully support Unicode in the Neutralinojs Windows version.
+
+Areas: Windows API, Refactoring, and Text Encoding
 
 
