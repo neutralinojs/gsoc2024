@@ -13,7 +13,7 @@ Areas: Windows API, DevOps, and Configuration
 
 ## Support Unicode characters in Neutralinojs Windows version
 
-Issue: https://github.com/neutralinojs/neutralinojs/issues/466
+Issue: https://github.com/neutralinojs/neutralinojs/issues/613
 
 Unicode characters work without any issue on Neutralinojs Linux and macOS versions. But, 
 Neutralinojs Windows version doesn't render Unicode characters correctly.
