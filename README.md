@@ -22,3 +22,12 @@ The goal of this task is to use Windows Unicode APIs and fully support Unicode i
 Areas: Windows API, Refactoring, and Text Encoding
 
 
+## Fix os.setTray function problem for older macOS versions
+
+Issue: https://github.com/neutralinojs/neutralinojs/issues/615
+
+The os.setTray function fails on macOS Catalina and some other versions.
+The goal of this task to debug the Neutralinojs macOS binary on different macOS versions and 
+apply a generic solution.
+
+Areas: Cocoa API and Debugging
