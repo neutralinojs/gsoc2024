@@ -31,3 +31,18 @@ The goal of this task to debug the Neutralinojs macOS binary on different macOS 
 apply a generic solution.
 
 Areas: Cocoa API and Debugging
+
+## NodeNeutralino: a community app to explain Neutralinojs custom backends
+
+The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
+the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
+
+Areas: Node.js and Neutralinojs
+
+## Submit a new idea
+
+We have listed down some crucial tasks above for contributing. But, feel free to discuss
+your own ideas with us via Discord or email. You can contribute Neutralinojs framework, CLI, client library and templates.
+
+
+Thanks for contributing to open-source
