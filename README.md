@@ -38,6 +38,17 @@ Areas: Cocoa API and Debugging
 
 Difficulty rating: Medium
 
+## Adding opacity setting to the configuration
+
+Issue: https://github.com/neutralinojs/roadmap/issues/1
+
+Add the `opacity` option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `0`, and the 
+CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. For other opacity values, the transparancy value needs to be applied accordingly.
+
+Areas: GTK, Cocoa, Win32 APIs
+
+Difficulty rating: Hard
+
 ## NodeNeutralino: a community project to explain Neutralinojs custom backends
 
 The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
