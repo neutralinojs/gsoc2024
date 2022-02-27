@@ -13,6 +13,8 @@ Areas: Windows API, DevOps, and Configuration
 
 Difficulty rating: Medium
 
+Project size: ~350h
+
 ## Support Unicode characters in Neutralinojs Windows version
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/613
@@ -25,6 +27,7 @@ Areas: Windows API, Refactoring, and Text Encoding
 
 Difficulty rating: Medium
 
+Project size: ~350h
 
 ## Fix os.setTray function problem for older macOS versions
 
@@ -38,6 +41,8 @@ Areas: Cocoa API and Debugging
 
 Difficulty rating: Medium
 
+Project size: ~350h
+
 ## Adding opacity setting to the configuration
 
 Issue: https://github.com/neutralinojs/roadmap/issues/1
@@ -49,6 +54,8 @@ Areas: GTK, Cocoa, Win32 APIs
 
 Difficulty rating: Hard
 
+Project size: ~350h
+
 ## NodeNeutralino: a community project to explain Neutralinojs custom backends
 
 The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
@@ -57,6 +64,8 @@ the extension API. This project will use Neutralinojs via Node.js child process 
 Areas: Node.js and Neutralinojs
 
 Difficulty rating: Easy
+
+Project size: ~175h
 
 ## Submit a new idea
 
