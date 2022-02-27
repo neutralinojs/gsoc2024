@@ -11,6 +11,8 @@ source, build scripts, and DevOps workflow to officially support older Windows v
 
 Areas: Windows API, DevOps, and Configuration
 
+Difficulty rating: Medium
+
 ## Support Unicode characters in Neutralinojs Windows version
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/613
@@ -20,6 +22,8 @@ Neutralinojs Windows version doesn't render Unicode characters correctly.
 The goal of this task is to use Windows Unicode APIs and fully support Unicode in the Neutralinojs Windows version.
 
 Areas: Windows API, Refactoring, and Text Encoding
+
+Difficulty rating: Medium
 
 
 ## Fix os.setTray function problem for older macOS versions
@@ -32,12 +36,16 @@ apply a generic solution.
 
 Areas: Cocoa API and Debugging
 
+Difficulty rating: Medium
+
 ## NodeNeutralino: a community project to explain Neutralinojs custom backends
 
 The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
 the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
 
 Areas: Node.js and Neutralinojs
+
+Difficulty rating: Easy
 
 ## Submit a new idea
 
