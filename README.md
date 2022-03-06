@@ -67,6 +67,17 @@ Difficulty rating: Easy
 
 Project size: ~175h
 
+## C++/JavaScript integration test system enhancements
+
+Neutralinojs project has a integration test suite for testing both C++ and JavaScript code at once. Currently, Neutralinojs integration tests covers minimal tests 
+to detect possible function breakdowns. The goal of this task is to write a complete test suite covering all aspects of Neutralinojs APIs and global variables. Also, we expect to run the test suite on Windows CI instance too.
+
+Areas: Neutralinojs, Unit/Integration testing, Node.js and GitHub Actions
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
 ## Submit a new idea
 
 We have listed down some crucial tasks above for contributing. But, feel free to discuss
