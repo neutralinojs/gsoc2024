@@ -70,7 +70,7 @@ Project size: ~175h
 ## Submit a new idea
 
 We have listed down some crucial tasks above for contributing. But, feel free to discuss
-your own ideas with us via Discord or email. You can contribute Neutralinojs framework, CLI, client library and templates.
+your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`neutralinojs[AT]gmail.com`). You can contribute Neutralinojs framework, CLI, client library and templates.
 
 
 Thanks for contributing to open-source
