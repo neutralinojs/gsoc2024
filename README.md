@@ -8,7 +8,7 @@ successfully complete the GSoC program. GSoc contributors typically work on open
 
 ## How to become a GSoC contributor
 
-Anyone who is older than 18 can become a contributor with the GSoC 2022 program. Please following the following steps:
+Anyone who is older than 18 can become a contributor with the GSoC 2022 program. Please follow the following steps:
 
 - Join Neutralinojs Discord channel using [this invitation link](https://discord.gg/cybpp4guTJ)
 - Introduce yourself in the #gsoc channel.
