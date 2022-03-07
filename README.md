@@ -22,7 +22,7 @@ Anyone who is older than 18 can become a contributor with the GSoC 2022 program.
 If you are familiar with Neutralinojs internals and the codebase, you can become a mentor. Please discuss more details about mentorship by sending an email
 to `neutralinojs[AT]gmail.com`
 
-## GSoC 2020 project ideas
+## GSoC 2022 project ideas
 
 We have listed down some crucial tasks below for contributing. But, feel free to discuss
 your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`neutralinojs[AT]gmail.com`). You can contribute Neutralinojs framework, CLI, client library and templates.
