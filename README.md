@@ -4,7 +4,7 @@ Google Summer of Code 2022 ideas - Neutralinojs
 ## What is GSoC?
 
 GSoC (Google Summer of Code) is an international program that motivates developers to contribute open-source projects. Google awards stipends for contributors who
-successfully completes the GSoC program. GSoc contributors typically work on open-source development tasks under the guidance of organization mentors. Read more details about GSoC from the [official website](https://summerofcode.withgoogle.com/).
+successfully complete the GSoC program. GSoc contributors typically work on open-source development tasks under the guidance of organization mentors. Read more details about GSoC from the [official website](https://summerofcode.withgoogle.com/).
 
 ## How to become a GSoC contributor
 
