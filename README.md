@@ -6,7 +6,7 @@ Google Summer of Code 2022 ideas - Neutralinojs
 GSoC (Google Summer of Code) is an international program that motivates developers to contribute to open-source projects. Google awards stipends for contributors who
 successfully complete the GSoC program. GSoc contributors typically work on open-source development tasks under the guidance of organization mentors. Read more details about GSoC from the [official website](https://summerofcode.withgoogle.com/).
 
-## How to become a GSoC contributor
+## How to become a GSoC contributor?
 
 Anyone who is older than 18 can become a contributor with the GSoC 2022 program. Please follow the following steps:
 
@@ -17,7 +17,7 @@ Anyone who is older than 18 can become a contributor with the GSoC 2022 program.
 - Start drafting a proposal by discussing with mentors
 - Submit your proposal and achieve the planned milestons based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2022).
 
-## How to become a GSoC mentor
+## How to become a GSoC mentor?
 
 If you are familiar with Neutralinojs internals and the codebase, you can become a mentor. Please discuss more details about mentorship by sending an email
 to `neutralinojs[AT]gmail.com`
