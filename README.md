@@ -1,7 +1,35 @@
 # gsoc2022
 Google Summer of Code 2022 ideas - Neutralinojs
 
-## Make Neutralinojs compatible with older Windows versions
+## What is GSoC?
+
+GSoC (Google Summer of Code) is an international program that motivates developers to contribute open-source projects. Google awards stipends for contributors who
+successfully completes the GSoC program. GSoc contributors typically work on open-source development tasks under the guidance of organization mentors. Read more details about GSoC from the [official website](https://summerofcode.withgoogle.com/).
+
+## How to become a GSoC contributor
+
+Anyone who is older than 18 can become a contributor with the GSoC 2022 program. Please following the following steps:
+
+- Join Neutralinojs Discord channel using [this invitation link]([Discord](https://discord.gg/cybpp4guTJ))
+- Introduce yourself in the #gsoc channel.
+- Become familiar with the project, and start contributing
+- Tell us about tasks that you would like to work on. If you have new ideas, tell us about goals
+- Start drafting a proposal by discussing with mentors
+- Submit your proposal and achieve the planned milestons based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2022).
+
+## How to become a GSoC mentor
+
+If you are familiar with Neutralinojs internals and the codebase, you can become a mentor. Please discuss more details about mentorship by sending an email
+to `neutralinojs[AT]gmail.com`
+
+## GSoC 2020 project ideas
+
+We have listed down some crucial tasks below for contributing. But, feel free to discuss
+your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`neutralinojs[AT]gmail.com`). You can contribute Neutralinojs framework, CLI, client library and templates.
+
+Thanks for contributing to open-source 🎉
+
+### Make Neutralinojs compatible with older Windows versions
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/486
 
@@ -15,7 +43,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-## Support Unicode characters in Neutralinojs Windows version
+### Support Unicode characters in Neutralinojs Windows version
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/613
 
@@ -29,7 +57,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-## Fix os.setTray function problem for older macOS versions
+### Fix os.setTray function problem for older macOS versions
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/615
 
@@ -43,7 +71,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-## Adding opacity setting to the configuration
+### Adding opacity setting to the configuration
 
 Issue: https://github.com/neutralinojs/roadmap/issues/1
 
@@ -56,7 +84,7 @@ Difficulty rating: Hard
 
 Project size: ~350h
 
-## NodeNeutralino: a community project to explain Neutralinojs custom backends
+### NodeNeutralino: a community project to explain Neutralinojs custom backends
 
 The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
 the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
@@ -67,7 +95,7 @@ Difficulty rating: Easy
 
 Project size: ~175h
 
-## C++/JavaScript integration test system enhancements
+### C++/JavaScript integration test system enhancements
 
 Neutralinojs project has a integration test suite for testing both C++ and JavaScript code at once. Currently, Neutralinojs integration tests covers minimal tests 
 to detect possible function breakdowns. The goal of this task is to write a complete test suite covering all aspects of Neutralinojs APIs and global variables. Also, we expect to run the test suite on Windows CI instance too.
@@ -77,11 +105,3 @@ Areas: Neutralinojs, Unit/Integration testing, Node.js and GitHub Actions
 Difficulty rating: Medium
 
 Project size: ~350h
-
-## Submit a new idea
-
-We have listed down some crucial tasks above for contributing. But, feel free to discuss
-your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`neutralinojs[AT]gmail.com`). You can contribute Neutralinojs framework, CLI, client library and templates.
-
-
-Thanks for contributing to open-source
