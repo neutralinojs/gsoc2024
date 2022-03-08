@@ -16,7 +16,7 @@ Anyone who is older than 18 can become a contributor with the GSoC 2022 program.
 - Become familiar with the project, and start contributing
 - Tell us about tasks that you would like to work on. If you have new ideas, tell us about goals
 - Start drafting a proposal by discussing with mentors
-- Submit your proposal and achieve the planned milestons based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2022).
+- Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2022).
 
 ## How to become a GSoC mentor?
 
@@ -77,7 +77,7 @@ Project size: ~350h
 Issue: https://github.com/neutralinojs/roadmap/issues/1
 
 Add the `opacity` option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `0`, and the 
-CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. For other opacity values, the transparancy value needs to be applied accordingly.
+CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. For other opacity values, the transparency value needs to be applied accordingly.
 
 Areas: GTK, Cocoa, Win32 APIs
 
