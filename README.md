@@ -1,5 +1,6 @@
-# gsoc2022
-Google Summer of Code 2022 ideas - Neutralinojs
+# GSoC 2022 - Neutralinojs
+
+Google Summer of Code 2022 ideas and guidelines - Neutralinojs
 
 ## What is GSoC?
 
