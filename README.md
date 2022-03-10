@@ -98,6 +98,8 @@ Project size: ~175h
 
 ### C++/JavaScript integration test system enhancements
 
+Issue: https://github.com/neutralinojs/neutralinojs/issues/706
+
 Neutralinojs project has a integration test suite for testing both C++ and JavaScript code at once. Currently, Neutralinojs integration tests covers minimal tests 
 to detect possible function breakdowns. The goal of this task is to write a complete test suite covering all aspects of Neutralinojs APIs and global variables. Also, we expect to run the test suite on Windows CI instance too.
 
@@ -108,6 +110,8 @@ Difficulty rating: Medium
 Project size: ~350h
 
 ### Writing a test suite for the Neutralinojs CLI
+
+Issue: https://github.com/neutralinojs/neutralinojs-cli/issues/95
 
 The goal is to create a complete test suite for Neutralinojs CLI similar to the Neutralinojs [framework integration test suite](https://github.com/neutralinojs/neutralinojs/tree/main/spec). The suggested approach is to invoke CLI commands with the Node.js child process API and test Neutralinojs CLI's behavior (asserting command output, exit codes, file updates, etc.). We expect to implement Mocha tests for all CLI commands and options.
 
