@@ -106,3 +106,13 @@ Areas: Neutralinojs, Unit/Integration testing, Node.js and GitHub Actions
 Difficulty rating: Medium
 
 Project size: ~350h
+
+### Writing a test suite for the Neutralinojs CLI
+
+The goal is to create a complete test suite for Neutralinojs CLI similar to the Neutralinojs [framework integration test suite](https://github.com/neutralinojs/neutralinojs/tree/main/spec). The suggested approach is to invoke CLI commands with the Node.js child process API and test Neutralinojs CLI's behavior (asserting command output, exit codes, file updates, etc.). We expect to implement Mocha tests for all CLI commands and options.
+
+Areas: Node.js, Mocha, Testing and Neutralinojs
+
+Difficulty rating: Easy
+
+Project size: ~175h
