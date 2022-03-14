@@ -23,7 +23,7 @@ Anyone who is older than 18 can become a contributor with the GSoC 2022 program.
 ## How to start writing a project proposal?
 
 - Make sure to follow the above initial steps and become familiar with the project.
-- Select a project idea or discuss a new idea.
+- Select a project idea or initiate a new idea.
 - Post a summary and goals of your preferred project idea via a [new GitHub discussion thread](https://github.com/neutralinojs/gsoc2022/discussions/new?category=ideas).
 - Wait until project maintainers give a feedback to the post (We can identify possible changes in the early stage).
 - Start drafting your proposal based on the Neutralinojs GSoC contributor proposal outline.
