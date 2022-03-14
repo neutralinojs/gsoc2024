@@ -20,6 +20,26 @@ Anyone who is older than 18 can become a contributor with the GSoC 2022 program.
 - Start drafting a proposal by discussing with mentors.
 - Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2022).
 
+## How to start writing a project proposal?
+
+- Make sure to follow the above initial steps and become familiar with the project.
+- Select a project idea or discuss a new idea.
+- Post a summary and goals of your preferred project idea into #gsoc channel.
+- Wait until project maintainers give a feedback to the post (We can identify possible changes in the early stage).
+- Start drafting your proposal based on the Neutralinojs GSoC contributor proposal outline.
+
+## What is the project proposal template?
+
+Please create your GSoC proposal according to the following outline:
+
+- Contact details (Name, Country, Email, GitHub username, Discord username, and a small description about yourself)
+- Neutralinojs experience (Explain your familiarity with Neutralinojs)
+- Contributions (Add links to your pull-requests, issues, and discussion threads)
+- Project description (Describe the project idea)
+- Goals (Summary of deliverables)
+- Timeline (Decompose your goals into tasks and map with the GSoC timeline)
+- Future contributions (How do you plan to contribute to Neutralinojs in the future?)
+
 ## How to become a GSoC mentor?
 
 If you are familiar with Neutralinojs internals and the codebase, you can become a mentor. Please discuss more details about mentorship by sending an email
