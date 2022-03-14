@@ -14,6 +14,7 @@ Anyone who is older than 18 can become a contributor with the GSoC 2022 program.
 - Join Neutralinojs Discord channel using [this invitation link](https://discord.gg/cybpp4guTJ).
 - Introduce yourself in the #gsoc channel.
 - Become familiar with the main project and sub-projects.
+- Watch [framework](https://youtu.be/QGZywYDsSyg), [JavaScript API](https://youtu.be/V-RD6ia5YjY), and [CLI](https://youtu.be/XUj20aJDJiI) code explanation videos for detailed codebase explanations. 
 - Read both [contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide) and [code style guide](https://neutralino.js.org/docs/contributing/code-style-guide), then start contributing.
 - Tell us about tasks that you would like to work on. If you have new ideas, tell us about goals.
 - Start drafting a proposal by discussing with mentors.
