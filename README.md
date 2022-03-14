@@ -37,7 +37,7 @@ Please create your GSoC proposal according to the following outline:
 - Contributions (Add links to your pull-requests, issues, and discussion threads)
 - Project description (Describe the project idea)
 - Goals (Summary of deliverables)
-- Timeline (Decompose your goals into tasks and map with the GSoC timeline)
+- Tasks Timeline (Decompose your goals into tasks and map with the GSoC timeline)
 - Future contributions (How do you plan to contribute to Neutralinojs in the future?)
 
 ## How to become a GSoC mentor?
