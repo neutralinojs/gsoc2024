@@ -113,6 +113,8 @@ Difficulty rating: Easy
 
 Project size: ~175h
 
+Possible Mentors: Athif Shaffy, Carlonn Rivers
+
 ### C++/JavaScript integration test system enhancements
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/706
@@ -126,6 +128,8 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
+Possible Mentors: Shalitha Suranga
+
 ### Writing a test suite for the Neutralinojs CLI
 
 Issue: https://github.com/neutralinojs/neutralinojs-cli/issues/95
@@ -137,3 +141,5 @@ Areas: Node.js, Mocha, Testing and Neutralinojs
 Difficulty rating: Easy
 
 Project size: ~175h
+
+Possible Mentors: Shalitha Suranga
