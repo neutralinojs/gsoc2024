@@ -143,3 +143,15 @@ Difficulty rating: Easy
 Project size: ~175h
 
 Possible Mentors: Shalitha Suranga
+
+### Neutralinojs Builder: a community project to generate Neutralino app packages
+
+Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. Therefore, we are planning to create a new community project called "Neutralinojs Builder" to generate application installers. The idea is to create this as a CLI plugin.
+
+Areas: Node.js, Neutralinojs, Application bundling on operating systems
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
+Possible Mentors: Shalitha Suranga
