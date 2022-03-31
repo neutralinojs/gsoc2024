@@ -75,6 +75,8 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
+Possible Mentors: Shalitha Suranga
+
 ### Fix os.setTray function problem for older macOS versions
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/615
