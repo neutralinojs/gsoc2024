@@ -117,6 +117,39 @@ Project size: ~175h
 
 Possible Mentors: Athif Shaffy, Carlonn Rivers
 
+#### Suggested technical decisions
+
+- Implement an API similar to Electronjs [`BrowserWindow`](https://www.electronjs.org/docs/latest/api/browser-window) class.
+
+Example NodeNeutralino app code:
+
+```js
+const { NeutralinoApp } = require('node-neutralino');
+
+// Accepts all configuration options available in Neutralino.window.create
+// Don't manipulate the config file -- use internal CLI arguments instead.
+const app = new NeutralinoApp({url: '/resources', width: 500, height: 500});
+
+// Every Neutralino.window API function is available except window.create and draggable regions API
+app.window.setFullScreen();
+app.window.hide();
+app.window.show();
+
+// All other Neutralino APIs are also available
+app.storage.setData('testKey', 'testValue');
+app.debug.log('Hello');
+app.filesystem.createDirectory('TestDir');
+
+// Neutralino.app functions are available directly via the app instance
+app.broadcast('testEvent');
+app.exit();
+```
+- Try to implement without any third-party Node module.
+- Make every function asynchronous and throw Neutralinojs [error codes](https://neutralino.js.org/docs/api/error-codes) properly.
+- Use Node.js [child process API](https://nodejs.org/api/child_process.html#child_processspawncommand-args-options) to spawn Neutralinojs binaries.
+- Create an app template for Neutralinojs CLI.
+- Use a project structure similar to the Neutralinojs client library.
+
 ### C++/JavaScript integration test system enhancements
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/706
