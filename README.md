@@ -198,3 +198,58 @@ Difficulty rating: Medium
 Project size: ~350h
 
 Possible Mentors: Shalitha Suranga
+
+### Suggested technical decisions
+
+- Creating a CLI plugin for the solution.
+- Expose a new command to generate application packages.
+
+```bash
+# Installing the plugin
+neu plugins --add neutralinojs-builder
+
+# neu builder <target> <arch>
+neu builder nsis --x64 # NSIS setup for Windows x64
+neu builder deb --ia32 # Debian package for GNU/Linux ia32
+neu builder appimage --x64 # AppImage for GNU/Linux x64
+neu builder deb # GNU/Linux Debian packages for all supported CPU architectures
+
+# Use configuration from neutralino.config.json
+neu builder
+
+# Removing the plugin
+neu plugins --remove neutralinojs-builder
+```
+- If the developer run `neu builder` without any parameters, get the targets from the config file:
+
+```json
+"cli": {
+  "builder": {
+    "linux": {
+      "targets": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64",
+            "ia32",
+            "armhf"
+          ]
+        }
+      ]
+    },
+    "win": {
+      "targets": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+- Even though Neutralinojs provides x64 binaries officially, implement multi-architecture support.
+- Implement package targets as internal plugins (Import only required modules based on targets). Try to use modules like `targets/deb.js`, `targets/nsis.js` for dynamic loading.
