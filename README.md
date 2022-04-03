@@ -108,12 +108,12 @@ Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
 
 - Add additional configuration code to the [webview fork](https://github.com/neutralinojs/webview) rather than updating `window.cpp` if possible.
 
-### Adding opacity setting to the configuration
+### Adding window transparent setting to the configuration
 
 Issue: https://github.com/neutralinojs/roadmap/issues/1
 
 Add the `transparent` (Boolean) option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `true`, and the 
-CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. Transparency can be disabled by setting the `transparent` property to `false`.
+CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. Transparency can be disabled by setting the `transparent` property to `false`. The developer can adjust the window transparency level with CSS. 
 
 Areas: GTK, Cocoa, Win32 APIs
 
