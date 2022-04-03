@@ -128,7 +128,15 @@ const { NeutralinoApp } = require('node-neutralino');
 
 // Accepts all configuration options available in Neutralino.window.create
 // Don't manipulate the config file -- use internal CLI arguments instead.
-const app = new NeutralinoApp({url: '/resources', width: 500, height: 500});
+const app = new NeutralinoApp({
+              url: '/resources', 
+              modes: {
+                window: {
+                  width: 500,
+                  height: 500
+                }
+              }
+             });
 
 // Every Neutralino.window API function is available except window.create and draggable regions API
 app.window.setFullScreen();
