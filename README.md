@@ -61,6 +61,12 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
+Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
+
+#### Suggested technical decisions
+
+*None -- cause needs to be indentified first*
+
 ### Support Unicode characters in Neutralinojs Windows version
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/613
@@ -77,6 +83,11 @@ Project size: ~350h
 
 Possible Mentors: Shalitha Suranga
 
+#### Suggested technical decisions
+
+- Create helper functions to convert C++ string to Windows wide char and vice versa (Check [this](https://github.com/samhocevar/portable-file-dialogs/blob/67e7b0945aac80efa2ec5c72de98b47f7552735c/portable-file-dialogs.h#L420) example).
+- Replace all ASCII Win32 functions with Unicode versions.
+
 ### Fix os.setTray function problem for older macOS versions
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/615
@@ -91,18 +102,34 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
+Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
+
+#### Suggested technical decisions
+
+- Add additional configuration code to the [webview fork](https://github.com/neutralinojs/webview) rather than updating `window.cpp` if possible.
+
 ### Adding opacity setting to the configuration
 
 Issue: https://github.com/neutralinojs/roadmap/issues/1
 
-Add the `opacity` option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `0`, and the 
-CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. For other opacity values, the transparency value needs to be applied accordingly.
+Add the `transparent` (Boolean) option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `true`, and the 
+CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. Transparency can be disabled by setting the `transparent` property to `false`.
 
 Areas: GTK, Cocoa, Win32 APIs
 
 Difficulty rating: Hard
 
 Project size: ~350h
+
+Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
+
+#### Suggested technical decisions
+
+- Try to implement the solution within [`window.cpp`](https://github.com/neutralinojs/neutralinojs/blob/main/api/window/window.cpp)
+- Add implementation via a new function named `setTransparent(bool transparent = false)`
+- Use `false` as the default value.
+- Add as a CLI argument too (`--window-transparent`)
+
 
 ### NodeNeutralino: a community project to explain Neutralinojs custom backends
 
@@ -173,6 +200,11 @@ Project size: ~350h
 
 Possible Mentors: Shalitha Suranga
 
+#### Suggested technical decisions
+
+- Increase test coverage by adding more test cases.
+- Test global variables properly.
+
 ### Writing a test suite for the Neutralinojs CLI
 
 Issue: https://github.com/neutralinojs/neutralinojs-cli/issues/95
@@ -187,7 +219,7 @@ Project size: ~175h
 
 Possible Mentors: Shalitha Suranga
 
-### Suggested technical decisions
+#### Suggested technical decisions
 
 - Use Mocha, Node.js child process, built-in Assertion library.
 - Implement similar to the [main C++/Js integration test suite](https://github.com/neutralinojs/neutralinojs/tree/main/spec).
@@ -217,7 +249,7 @@ Project size: ~350h
 
 Possible Mentors: Shalitha Suranga
 
-### Suggested technical decisions
+#### Suggested technical decisions
 
 - Creating a CLI plugin for the solution.
 - Expose a new command to generate application packages.
