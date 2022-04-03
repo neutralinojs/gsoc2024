@@ -126,7 +126,7 @@ Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
 #### Suggested technical decisions
 
 - Try to implement the solution within [`window.cpp`](https://github.com/neutralinojs/neutralinojs/blob/main/api/window/window.cpp)
-- Add implementation via a new function named `setTransparent(bool transparent = false)`
+- Add implementation via a new function named `setTransparent()` under the `window` namespace. Invoke from `__createWindow`.
 - Use `false` as the default value.
 - Add as a CLI argument too (`--window-transparent`)
 
