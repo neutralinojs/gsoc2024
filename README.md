@@ -187,6 +187,24 @@ Project size: ~175h
 
 Possible Mentors: Shalitha Suranga
 
+### Suggested technical decisions
+
+- Use Mocha, Node.js child process, built-in Assertion library.
+- Implement similar to the [main C++/Js integration test suite](https://github.com/neutralinojs/neutralinojs/tree/main/spec).
+- Support the following test commands:
+
+```bash
+# Running all test cases
+npm test
+
+# Tests related to the create command
+npm test create
+
+# Tests related to the build command
+npm test build
+```
+- Update current GitHub actions workflow with the new test suite.
+
 ### Neutralinojs Builder: a community project to generate Neutralino app packages
 
 Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. Therefore, we are planning to create a new community project called "Neutralinojs Builder" to generate application installers. The idea is to create this as a CLI plugin.
