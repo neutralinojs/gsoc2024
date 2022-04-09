@@ -47,7 +47,7 @@ your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`n
 
 Thanks for contributing to open-source 🎉
 
-### Make Neutralinojs compatible with older Windows versions
+### 1. Make Neutralinojs compatible with older Windows versions
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/486
 
@@ -67,7 +67,7 @@ Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
 
 *None -- cause needs to be indentified first*
 
-### Support Unicode characters in Neutralinojs Windows version
+### 2. Support Unicode characters in Neutralinojs Windows version
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/613
 
@@ -88,7 +88,7 @@ Possible Mentors: Shalitha Suranga
 - Create helper functions to convert C++ string to Windows wide char and vice versa (Check [this](https://github.com/samhocevar/portable-file-dialogs/blob/67e7b0945aac80efa2ec5c72de98b47f7552735c/portable-file-dialogs.h#L420) example).
 - Replace all ASCII Win32 functions with Unicode versions.
 
-### Fix os.setTray function problem for older macOS versions
+### 3. Fix `os.setTray` function problem for older macOS versions
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/615
 
@@ -108,7 +108,7 @@ Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
 
 - Add additional configuration code to the [webview fork](https://github.com/neutralinojs/webview) rather than updating `window.cpp` if possible.
 
-### Adding window transparent setting to the configuration
+### 4. Adding window transparent setting to the configuration
 
 Issue: https://github.com/neutralinojs/roadmap/issues/1
 
@@ -131,7 +131,7 @@ Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
 - Add as a CLI argument too (`--window-transparent`)
 
 
-### NodeNeutralino: a community project to explain Neutralinojs custom backends
+### 5. NodeNeutralino: a community project to explain Neutralinojs custom backends
 
 The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
 the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
@@ -185,7 +185,7 @@ app.exit();
 - Create an app template for Neutralinojs CLI.
 - Use a project structure similar to the Neutralinojs client library.
 
-### C++/JavaScript integration test system enhancements
+### 6. C++/JavaScript integration test system enhancements
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/706
 
@@ -205,7 +205,7 @@ Possible Mentors: Shalitha Suranga
 - Increase test coverage by adding more test cases.
 - Test global variables properly.
 
-### Writing a test suite for the Neutralinojs CLI
+### 7. Writing a test suite for the Neutralinojs CLI
 
 Issue: https://github.com/neutralinojs/neutralinojs-cli/issues/95
 
@@ -237,7 +237,7 @@ npm test build
 ```
 - Update current GitHub actions workflow with the new test suite.
 
-### Neutralinojs Builder: a community project to generate Neutralino app packages
+### 8. Neutralinojs Builder: a community project to generate Neutralino app packages
 
 Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. Therefore, we are planning to create a new community project called "Neutralinojs Builder" to generate application installers. The idea is to create this as a CLI plugin.
 
