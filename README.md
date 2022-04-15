@@ -19,7 +19,6 @@ Anyone (including newcomers and beginners) who are older than 18 can become a co
 - Tell us about tasks that you would like to work on. If you have new ideas, mention them in community channels including your project goals.
 - Start drafting a proposal by discussing with mentors.
 - Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2022).
-- Projects can be spread out over 10–22 weeks.
 
 ## How to start writing a project proposal?
 
