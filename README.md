@@ -45,7 +45,7 @@ Please create your GSoC proposal according to the following outline:
 We have listed down some crucial tasks below for contributing. But, feel free to discuss
 your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`neutralinojs[AT]gmail.com`). You can contribute Neutralinojs framework, CLI, client library and templates.
 
-Thanks for contributing to open-source 🎉
+Thank you for contributing to open-source 🎉
 
 ### 1. Make Neutralinojs compatible with older Windows versions
 
@@ -306,7 +306,7 @@ neu plugins --remove neutralinojs-builder
 
 ### Contributing
 
-We really appreciate your code contributions. Please read [this contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide#contribution-guidelines) before sending a pull request. Thanks for your contributions.
+We really appreciate your code contributions. Please read [this contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide#contribution-guidelines) before sending a pull request. Thank you for your contributions.
 
 ### Contributors
 
