@@ -1,6 +1,6 @@
-# GSoC 2022 - Neutralinojs
+# GSoC 2023 - Neutralinojs
 
-Google Summer of Code 2022 ideas and guidelines - Neutralinojs
+Google Summer of Code 2023 ideas and guidelines - Neutralinojs
 
 ## What is GSoC?
 
@@ -9,7 +9,7 @@ successfully complete the GSoC program. GSoc contributors typically work on open
 
 ## How to become a GSoC contributor?
 
-Anyone (including newcomers and beginners) who is older than 18 can become a contributor with the GSoC 2022 program. Please follow the following steps:
+Anyone (including newcomers and beginners) who is older than 18 can become a contributor with the GSoC 2023 program. Please follow the following steps:
 
 - Join Neutralinojs Discord channel using [this invitation link](https://discord.gg/cybpp4guTJ).
 - Introduce yourself in the #gsoc channel on Discord.
@@ -18,13 +18,13 @@ Anyone (including newcomers and beginners) who is older than 18 can become a con
 - Read both [contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide) and [code style guide](https://neutralino.js.org/docs/contributing/code-style-guide), then start contributing.
 - Tell us about tasks that you would like to work on. If you have new ideas, mention them in community channels including your project goals.
 - Start drafting a proposal by discussing with mentors.
-- Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2022).
+- Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2023).
 
 ## How to start writing a project proposal?
 
 - Make sure to follow the above initial steps and become familiar with the project.
 - Select a project idea out of the mentioned below
-- If you have an idea of your own / want to initiate one , post its summary and goals in a [new GitHub discussion thread](https://github.com/neutralinojs/gsoc2022/discussions/new?category=ideas).
+- If you have an idea of your own / want to initiate one , post its summary and goals in a [new GitHub discussion thread](https://github.com/neutralinojs/gsoc2023/discussions/new?category=ideas).
 - Wait until project maintainers give a feedback to the post (We can identify possible changes in the early stage).
 - Start drafting your proposal based on the Neutralinojs GSoC contributor proposal outline.
 
@@ -40,7 +40,7 @@ Please create your GSoC proposal according to the following outline:
 - Tasks Timeline (Decompose your goals into tasks and map with the GSoC timeline)
 - Future contributions (How do you plan to contribute to Neutralinojs in the future?)
 
-## GSoC 2022 project ideas
+## GSoC 2023 project ideas
 
 We have listed down some crucial tasks below for contributing. But, feel free to discuss
 your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`neutralinojs[AT]gmail.com`). You can contribute Neutralinojs framework, CLI, client library and templates.
