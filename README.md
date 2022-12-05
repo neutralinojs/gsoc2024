@@ -205,39 +205,8 @@ Possible Mentors: Shalitha Suranga
 - Increase test coverage by adding more test cases.
 - Test global variables properly.
 
-### 7. Writing a test suite for the Neutralinojs CLI
 
-Issue: https://github.com/neutralinojs/neutralinojs-cli/issues/95
-
-The goal is to create a complete test suite for Neutralinojs CLI similar to the Neutralinojs [framework integration test suite](https://github.com/neutralinojs/neutralinojs/tree/main/spec). The suggested approach is to invoke CLI commands with the Node.js child process API and test Neutralinojs CLI's behavior (asserting command output, exit codes, file updates, etc.). We expect to implement Mocha tests for all CLI commands and options.
-
-Areas: Node.js, Mocha, Testing and Neutralinojs
-
-Difficulty rating: Easy
-
-Project size: ~175h
-
-Possible Mentors: Shalitha Suranga
-
-#### Suggested technical decisions
-
-- Use Mocha, Node.js child process, built-in Assertion library.
-- Implement similar to the [main C++/Js integration test suite](https://github.com/neutralinojs/neutralinojs/tree/main/spec).
-- Support the following test commands:
-
-```bash
-# Running all test cases
-npm test
-
-# Tests related to the create command
-npm test create
-
-# Tests related to the build command
-npm test build
-```
-- Update current GitHub actions workflow with the new test suite.
-
-### 8. Neutralinojs Builder: a community project to generate Neutralino app packages
+### 7. Neutralinojs Builder: a community project to generate Neutralino app packages
 
 Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. Therefore, we are planning to create a new community project called "Neutralinojs Builder" to generate application installers. The idea is to create this as a CLI plugin.
 
