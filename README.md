@@ -273,14 +273,18 @@ neu plugins --remove neutralinojs-builder
 - Even though Neutralinojs provides x64 binaries officially, implement multi-architecture support.
 - Implement package targets as internal plugins (Import only required modules based on targets). Try to use modules like `targets/deb.js`, `targets/nsis.js` for dynamic loading.
 
-### Contributing
+## Contributing
 
 We really appreciate your code contributions. Please read [this contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide#contribution-guidelines) before sending a pull request. Thank you for your contributions.
 
-### Contributors
+## Contributors
 
 <a href="https://github.com/neutralinojs/gsoc2022/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=neutralinojs/gsoc2022" />
 </a>
+
+## Past programs
+
+- [GSoC 2022](https://summerofcode.withgoogle.com/programs/2022/organizations/neutralinojs)
 
 Image created with [contrib.rocks](https://contrib.rocks).
