@@ -100,7 +100,7 @@ Areas: Cocoa API and Debugging
 
 Difficulty rating: Medium
 
-Project size: ~350h
+Project size: ~350 hr
 
 Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
 
