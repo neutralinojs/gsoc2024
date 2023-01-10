@@ -47,168 +47,9 @@ your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`n
 
 Thank you for contributing to open-source 🎉
 
-### 1. Make Neutralinojs compatible with older Windows versions
+### 1. Neutralinojs Builder: a community project to generate Neutralino app packages
 
-Issue: https://github.com/neutralinojs/neutralinojs/issues/486
-
-Neutralinojs is tested on Windows 10 and 11, but it is not well-tested 
-with previous Windows versions. The goal of this idea is to update Neutralinojs framework
-source, build scripts, and DevOps workflow to officially support older Windows versions.
-
-Areas: Windows API, DevOps, and Configuration
-
-Difficulty rating: Medium
-
-Project size: ~350h
-
-Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
-
-#### Suggested technical decisions
-
-*None -- cause needs to be indentified first*
-
-### 2. Support Unicode characters in Neutralinojs Windows version
-
-Issue: https://github.com/neutralinojs/neutralinojs/issues/613
-
-Unicode characters work without any issue on Neutralinojs Linux and macOS versions. But, 
-Neutralinojs Windows version doesn't render Unicode characters correctly.
-The goal of this task is to use Windows Unicode APIs and fully support Unicode in the Neutralinojs Windows version.
-
-Areas: Windows API, Refactoring, and Text Encoding
-
-Difficulty rating: Medium
-
-Project size: ~350h
-
-Possible Mentors: Shalitha Suranga
-
-#### Suggested technical decisions
-
-- Create helper functions to convert C++ string to Windows wide char and vice versa (Check [this](https://github.com/samhocevar/portable-file-dialogs/blob/67e7b0945aac80efa2ec5c72de98b47f7552735c/portable-file-dialogs.h#L420) example).
-- Replace all ASCII Win32 functions with Unicode versions.
-
-### 3. Fix `os.setTray` function problem for older macOS versions
-
-Issue: https://github.com/neutralinojs/neutralinojs/issues/615
-
-The os.setTray function fails on macOS Catalina and some other versions.
-The goal of this task to debug the Neutralinojs macOS binary on different macOS versions and 
-apply a generic solution.
-
-Areas: Cocoa API and Debugging
-
-Difficulty rating: Medium
-
-Project size: ~350h
-
-Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
-
-#### Suggested technical decisions
-
-- Add additional configuration code to the [webview fork](https://github.com/neutralinojs/webview) rather than updating `window.cpp` if possible.
-
-### 4. Adding window transparent setting to the configuration
-
-Issue: https://github.com/neutralinojs/roadmap/issues/1
-
-Add the `transparent` (Boolean) option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `true`, and the 
-CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. Transparency can be disabled by setting the `transparent` property to `false`. The developer can adjust the window transparency level with CSS. 
-
-Areas: GTK, Cocoa, Win32 APIs
-
-Difficulty rating: Hard
-
-Project size: ~350h
-
-Possible Mentors: Athif Shaffy, Carlonn Rivers, Shalitha Suranga
-
-#### Suggested technical decisions
-
-- Try to implement the solution within [`window.cpp`](https://github.com/neutralinojs/neutralinojs/blob/main/api/window/window.cpp)
-- Add implementation via a new function named `setTransparent()` under the `window` namespace. Invoke from `__createWindow`.
-- Use `false` as the default value.
-- Add as a CLI argument too (`--window-transparent`)
-
-
-### 5. NodeNeutralino: a community project to explain Neutralinojs custom backends
-
-The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
-the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
-
-Areas: Node.js and Neutralinojs
-
-Difficulty rating: Easy
-
-Project size: ~175h
-
-Possible Mentors: Athif Shaffy, Carlonn Rivers
-
-#### Suggested technical decisions
-
-- Implement an API similar to Electronjs [`BrowserWindow`](https://www.electronjs.org/docs/latest/api/browser-window) class.
-
-Example NodeNeutralino app code:
-
-```js
-const { NeutralinoApp } = require('node-neutralino');
-
-// Accepts all configuration options available in Neutralino.window.create
-// Don't manipulate the config file -- use internal CLI arguments instead.
-const app = new NeutralinoApp({
-              url: '/resources', 
-              modes: {
-                window: {
-                  width: 500,
-                  height: 500
-                }
-              }
-             });
-
-// Every Neutralino.window API function is available except window.create and draggable regions API
-app.window.setFullScreen();
-app.window.hide();
-app.window.show();
-
-// All other Neutralino APIs are also available
-app.storage.setData('testKey', 'testValue');
-app.debug.log('Hello');
-app.filesystem.createDirectory('TestDir');
-
-// Neutralino.app functions are available directly via the app instance
-app.broadcast('testEvent');
-app.exit();
-```
-- Try to implement without any third-party Node module.
-- Make every function asynchronous and throw Neutralinojs [error codes](https://neutralino.js.org/docs/api/error-codes) properly.
-- Use Node.js [child process API](https://nodejs.org/api/child_process.html#child_processspawncommand-args-options) to spawn Neutralinojs binaries.
-- Create an app template for Neutralinojs CLI.
-- Use a project structure similar to the Neutralinojs client library.
-
-### 6. C++/JavaScript integration test system enhancements
-
-Issue: https://github.com/neutralinojs/neutralinojs/issues/706
-
-Neutralinojs project has a integration test suite for testing both C++ and JavaScript code at once. Currently, Neutralinojs integration tests covers minimal tests 
-to detect possible function breakdowns. The goal of this task is to write a complete test suite covering all aspects of Neutralinojs APIs and global variables. Also, we expect to run the test suite on Windows CI instance too.
-
-Areas: Neutralinojs, Unit/Integration testing, Node.js and GitHub Actions
-
-Difficulty rating: Medium
-
-Project size: ~350h
-
-Possible Mentors: Shalitha Suranga
-
-#### Suggested technical decisions
-
-- Increase test coverage by adding more test cases.
-- Test global variables properly.
-
-
-### 7. Neutralinojs Builder: a community project to generate Neutralino app packages
-
-Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. Therefore, we are planning to create a new community project called "Neutralinojs Builder" to generate application installers. The idea is to create this as a CLI plugin.
+Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. Therefore, the Neutralinojs community has initiated a project called "Neutralinojs Builder" to generate application installers. The Neutralinojs builder project is still a POC and experimental, so the idea is to finalize the project based on the suggested technical specification finalized by the framework developers.
 
 Areas: Node.js, Neutralinojs, Application bundling on operating systems
 
@@ -216,7 +57,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga
+Possible Mentors: Shalitha Suranga, TBD
 
 #### Suggested technical decisions
 
@@ -272,6 +113,163 @@ neu plugins --remove neutralinojs-builder
 ```
 - Even though Neutralinojs provides x64 binaries officially, implement multi-architecture support.
 - Implement package targets as internal plugins (Import only required modules based on targets). Try to use modules like `targets/deb.js`, `targets/nsis.js` for dynamic loading.
+
+### 2. Support Unicode characters in Neutralinojs Windows version
+
+Issue: https://github.com/neutralinojs/neutralinojs/issues/613
+
+Unicode characters work without any issue on Neutralinojs Linux and macOS versions. But, 
+Neutralinojs Windows version doesn't render Unicode characters correctly.
+The goal of this task is to use Windows Unicode APIs and fully support Unicode in the Neutralinojs Windows version.
+
+Areas: Windows API, Refactoring, and Text Encoding
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
+Possible Mentors: Shalitha Suranga, TBD
+
+#### Suggested technical decisions
+
+- Create helper functions to convert C++ string to Windows wide char and vice versa (Check [this](https://github.com/samhocevar/portable-file-dialogs/blob/67e7b0945aac80efa2ec5c72de98b47f7552735c/portable-file-dialogs.h#L420) example).
+- Replace all ASCII Win32 functions with Unicode versions.
+
+### 3. Make Neutralinojs compatible with older Windows versions
+
+Issue: https://github.com/neutralinojs/neutralinojs/issues/486
+
+Neutralinojs is tested on Windows 10 and 11, but it is not well-tested 
+with previous Windows versions. The goal of this idea is to update Neutralinojs framework
+source, build scripts, and DevOps workflow to officially support older Windows versions.
+
+Areas: Windows API, DevOps, and Configuration
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
+Possible Mentors: TBD
+
+#### Suggested technical decisions
+
+*None -- cause needs to be indentified first*
+
+### 4. NodeNeutralino: a community project to explain Neutralinojs custom backends
+
+The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
+the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
+
+Areas: Node.js and Neutralinojs
+
+Difficulty rating: Easy
+
+Project size: ~175h
+
+Possible Mentors: TBD
+
+#### Suggested technical decisions
+
+- Implement an API similar to Electronjs [`BrowserWindow`](https://www.electronjs.org/docs/latest/api/browser-window) class.
+
+Example NodeNeutralino app code:
+
+```js
+const { NeutralinoApp } = require('node-neutralino');
+
+// Accepts all configuration options available in Neutralino.window.create
+// Don't manipulate the config file -- use internal CLI arguments instead.
+const app = new NeutralinoApp({
+              url: '/resources', 
+              modes: {
+                window: {
+                  width: 500,
+                  height: 500
+                }
+              }
+             });
+
+// Every Neutralino.window API function is available except window.create and draggable regions API
+app.window.setFullScreen();
+app.window.hide();
+app.window.show();
+
+// All other Neutralino APIs are also available
+app.storage.setData('testKey', 'testValue');
+app.debug.log('Hello');
+app.filesystem.createDirectory('TestDir');
+
+// Neutralino.app functions are available directly via the app instance
+app.broadcast('testEvent');
+app.exit();
+```
+- Try to implement without any third-party Node module.
+- Make every function asynchronous and throw Neutralinojs [error codes](https://neutralino.js.org/docs/api/error-codes) properly.
+- Use Node.js [child process API](https://nodejs.org/api/child_process.html#child_processspawncommand-args-options) to spawn Neutralinojs binaries.
+- Create an app template for Neutralinojs CLI.
+- Use a project structure similar to the Neutralinojs client library.
+
+### 5. Fix `os.setTray` function problem for older macOS versions
+
+Issue: https://github.com/neutralinojs/neutralinojs/issues/615
+
+The os.setTray function fails on macOS Catalina and some other versions.
+The goal of this task to debug the Neutralinojs macOS binary on different macOS versions and 
+apply a generic solution.
+
+Areas: Cocoa API and Debugging
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
+Possible Mentors: TBD
+
+#### Suggested technical decisions
+
+- Add additional configuration code to the [webview fork](https://github.com/neutralinojs/webview) rather than updating `window.cpp` if possible.
+
+### 6. Adding window transparent setting to the configuration
+
+Issue: https://github.com/neutralinojs/roadmap/issues/1
+
+Add the `transparent` (Boolean) option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `true`, and the 
+CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. Transparency can be disabled by setting the `transparent` property to `false`. The developer can adjust the window transparency level with CSS. 
+
+Areas: GTK, Cocoa, Win32 APIs
+
+Difficulty rating: Hard
+
+Project size: ~350h
+
+Possible Mentors: TBD
+
+#### Suggested technical decisions
+
+- Try to implement the solution within [`window.cpp`](https://github.com/neutralinojs/neutralinojs/blob/main/api/window/window.cpp)
+- Add implementation via a new function named `setTransparent()` under the `window` namespace. Invoke from `__createWindow`.
+- Use `false` as the default value.
+- Add as a CLI argument too (`--window-transparent`)
+
+### 7. C++/JavaScript integration test system enhancements
+
+Issue: https://github.com/neutralinojs/neutralinojs/issues/706
+
+Neutralinojs project has a integration test suite for testing both C++ and JavaScript code at once. Currently, Neutralinojs integration tests covers minimal tests 
+to detect possible function breakdowns. The goal of this task is to write a complete test suite covering all aspects of Neutralinojs APIs and global variables. Also, we expect to run the test suite on Windows CI instance too.
+
+Areas: Neutralinojs, Unit/Integration testing, Node.js and GitHub Actions
+
+Difficulty rating: Medium
+
+Project size: ~350h
+
+Possible Mentors: Shalitha Suranga, TBD
+
+#### Suggested technical decisions
+
+- Increase test coverage by adding more test cases.
+- Test global variables properly.
 
 ## Contributing
 
