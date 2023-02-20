@@ -57,7 +57,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, TBD
+Possible Mentors: Shalitha Suranga, Sainath Rao, TBD
 
 #### Suggested technical decisions
 
@@ -128,7 +128,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, TBD
+Possible Mentors: Shalitha Suranga, Sainath Rao, TBD
 
 #### Suggested technical decisions
 
@@ -149,7 +149,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: TBD
+Possible Mentors: Sainath Rao, TBD
 
 #### Suggested technical decisions
 
@@ -166,7 +166,7 @@ Difficulty rating: Easy
 
 Project size: ~175h
 
-Possible Mentors: TBD
+Possible Mentors: Sainath Rao, TBD
 
 #### Suggested technical decisions
 
@@ -264,7 +264,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, TBD
+Possible Mentors: Shalitha Suranga, Sainath Rao, TBD
 
 #### Suggested technical decisions
 
