@@ -1,3 +1,5 @@
+__***Note: Neutralinojs wasn't selected for GSoC 2023. We are planning to apply again for the 2024 program in future.***__
+
 # GSoC 2023 - Neutralinojs
 
 Google Summer of Code 2023 ideas and guidelines - Neutralinojs
