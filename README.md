@@ -116,28 +116,8 @@ neu plugins --remove neutralinojs-builder
 - Even though Neutralinojs provides x64 binaries officially, implement multi-architecture support.
 - Implement package targets as internal plugins (Import only required modules based on targets). Try to use modules like `targets/deb.js`, `targets/nsis.js` for dynamic loading.
 
-### 2. Support Unicode characters in Neutralinojs Windows version
 
-Issue: https://github.com/neutralinojs/neutralinojs/issues/613
-
-Unicode characters work without any issue on Neutralinojs Linux and macOS versions. But, 
-Neutralinojs Windows version doesn't render Unicode characters correctly.
-The goal of this task is to use Windows Unicode APIs and fully support Unicode in the Neutralinojs Windows version.
-
-Areas: Windows API, Refactoring, and Text Encoding
-
-Difficulty rating: Medium
-
-Project size: ~350h
-
-Possible Mentors: Shalitha Suranga, Sainath Rao, TBD
-
-#### Suggested technical decisions
-
-- Create helper functions to convert C++ string to Windows wide char and vice versa (Check [this](https://github.com/samhocevar/portable-file-dialogs/blob/67e7b0945aac80efa2ec5c72de98b47f7552735c/portable-file-dialogs.h#L420) example).
-- Replace all ASCII Win32 functions with Unicode versions.
-
-### 3. Make Neutralinojs compatible with older Windows versions
+### 2. Make Neutralinojs compatible with older Windows versions
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/486
 
@@ -157,7 +137,7 @@ Possible Mentors: Sainath Rao, TBD
 
 *None -- cause needs to be indentified first*
 
-### 4. NodeNeutralino: a community project to explain Neutralinojs custom backends
+### 3. NodeNeutralino: a community project to explain Neutralinojs custom backends
 
 The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
 the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
@@ -211,7 +191,7 @@ app.exit();
 - Create an app template for Neutralinojs CLI.
 - Use a project structure similar to the Neutralinojs client library.
 
-### 5. Fix `os.setTray` function problem for older macOS versions
+### 4. Fix `os.setTray` function problem for older macOS versions
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/615
 
@@ -231,7 +211,7 @@ Possible Mentors: TBD
 
 - Add additional configuration code to the [webview fork](https://github.com/neutralinojs/webview) rather than updating `window.cpp` if possible.
 
-### 6. Adding window transparent setting to the configuration
+### 5. Adding window transparent setting to the configuration
 
 Issue: https://github.com/neutralinojs/roadmap/issues/1
 
@@ -253,7 +233,7 @@ Possible Mentors: TBD
 - Use `false` as the default value.
 - Add as a CLI argument too (`--window-transparent`)
 
-### 7. C++/JavaScript integration test system enhancements
+### 6. C++/JavaScript integration test system enhancements
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/706
 
