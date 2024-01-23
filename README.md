@@ -1,8 +1,6 @@
-__***Note: Neutralinojs wasn't selected for GSoC 2023. We are planning to apply again for the 2024 program in future.***__
+# GSoC 2024 - Neutralinojs
 
-# GSoC 2023 - Neutralinojs
-
-Google Summer of Code 2023 ideas and guidelines - Neutralinojs
+Google Summer of Code 2024 ideas and guidelines - Neutralinojs
 
 ## What is GSoC?
 
@@ -11,7 +9,7 @@ successfully complete the GSoC program. GSoc contributors typically work on open
 
 ## How to become a GSoC contributor?
 
-Anyone (including newcomers and beginners) who is older than 18 can become a contributor with the GSoC 2023 program. Please follow the following steps:
+Anyone (including newcomers and beginners) who is older than 18 can become a contributor with the GSoC 2024 program. Please follow the following steps:
 
 - Join Neutralinojs Discord channel using [this invitation link](https://discord.gg/cybpp4guTJ).
 - Introduce yourself in the #gsoc channel on Discord.
@@ -26,7 +24,7 @@ Anyone (including newcomers and beginners) who is older than 18 can become a con
 
 - Make sure to follow the above initial steps and become familiar with the project.
 - Select a project idea out of the mentioned below
-- If you have an idea of your own / want to initiate one , post its summary and goals in a [new GitHub discussion thread](https://github.com/neutralinojs/gsoc2023/discussions/new?category=ideas).
+- If you have an idea of your own / want to initiate one , post its summary and goals in a [new GitHub discussion thread](https://github.com/neutralinojs/gsoc2024/discussions/new?category=ideas).
 - Wait until project maintainers give a feedback to the post (We can identify possible changes in the early stage).
 - Start drafting your proposal based on the Neutralinojs GSoC contributor proposal outline.
 
@@ -42,7 +40,7 @@ Please create your GSoC proposal according to the following outline:
 - Tasks Timeline (Decompose your goals into tasks and map with the GSoC timeline)
 - Future contributions (How do you plan to contribute to Neutralinojs in the future?)
 
-## GSoC 2023 project ideas
+## GSoC 2024 project ideas
 
 We have listed down some crucial tasks below for contributing. But, feel free to discuss
 your own ideas with us via [Discord](https://discord.gg/cybpp4guTJ) or email (`neutralinojs[AT]gmail.com`). You can contribute Neutralinojs framework, CLI, client library and templates.
@@ -59,7 +57,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, Sainath Rao, TBD
+Possible Mentors: Shalitha Suranga, TBD
 
 #### Suggested technical decisions
 
@@ -131,7 +129,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Sainath Rao, TBD
+Possible Mentors: TBD
 
 #### Suggested technical decisions
 
@@ -205,7 +203,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: TBD
+Possible Mentors: Shalitha Suranga, TBD
 
 #### Suggested technical decisions
 
@@ -246,7 +244,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, Sainath Rao, TBD
+Possible Mentors: Shalitha Suranga, TBD
 
 #### Suggested technical decisions
 
