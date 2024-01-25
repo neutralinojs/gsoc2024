@@ -131,7 +131,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: TBD
+Possible Mentors: Shalitha Suranga, TBD
 
 #### Suggested technical decisions
 
