@@ -9,7 +9,9 @@ successfully complete the GSoC program. GSoc contributors typically work on open
 
 ## How to become a GSoC contributor?
 
-Anyone (including newcomers and beginners) who is older than 18 can become a contributor with the GSoC 2024 program. Please follow the following steps:
+Anyone (including beginners and students) who is older than 18 can become a contributor with the GSoC 2024 program. Check more details about contributor eligibility from [this link](https://summerofcode.withgoogle.com/rules).
+
+Follow these steps to get started with GSoC 2024 as a contributor:
 
 - Join Neutralinojs Discord channel using [this invitation link](https://discord.gg/cybpp4guTJ).
 - Introduce yourself in the #gsoc channel on Discord.
