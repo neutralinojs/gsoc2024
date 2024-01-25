@@ -17,7 +17,7 @@ Follow these steps to get started with GSoC 2024 as a contributor:
 - Introduce yourself in the #gsoc channel on Discord.
 - Become familiar with the main project and sub-projects, start with the [documentation](https://neutralino.js.org/), and then [codebases](https://github.com/neutralinojs).
 - Watch [framework](https://youtu.be/QGZywYDsSyg), [JavaScript API](https://youtu.be/V-RD6ia5YjY), and [CLI](https://youtu.be/XUj20aJDJiI) code explanation videos for detailed codebase explanations. 
-- Read both [contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide) and [code style guide](https://neutralino.js.org/docs/contributing/code-style-guide), then start contributing (Our recommendation is to start contributing to documentation first to understand framework as a user).
+- Read both [contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide) and [code style guide](https://neutralino.js.org/docs/contributing/code-style-guide), then start contributing (our recommendation is to start contributing to documentation first to understand framework as a user).
 - Tell us about tasks that you would like to work on. If you have new ideas, mention them in community channels including your project goals.
 - Start drafting a proposal by discussing with mentors.
 - Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2024).
