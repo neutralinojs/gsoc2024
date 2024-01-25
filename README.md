@@ -148,7 +148,7 @@ Difficulty rating: Easy
 
 Project size: ~175h
 
-Possible Mentors: Sainath Rao, TBD
+Possible Mentors: Shalitha Suranga, TBD
 
 #### Suggested technical decisions
 
