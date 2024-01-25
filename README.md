@@ -18,7 +18,7 @@ Anyone (including newcomers and beginners) who is older than 18 can become a con
 - Read both [contribution guide](https://neutralino.js.org/docs/contributing/framework-developer-guide) and [code style guide](https://neutralino.js.org/docs/contributing/code-style-guide), then start contributing.
 - Tell us about tasks that you would like to work on. If you have new ideas, mention them in community channels including your project goals.
 - Start drafting a proposal by discussing with mentors.
-- Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2023).
+- Submit your proposal and achieve the planned milestones based on the GSoC program [schedule](https://summerofcode.withgoogle.com/programs/2024).
 
 ## How to start writing a project proposal?
 
