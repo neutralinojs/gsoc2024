@@ -59,7 +59,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, TBD
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Suggested technical decisions
 
@@ -131,7 +131,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, TBD
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Suggested technical decisions
 
@@ -148,7 +148,7 @@ Difficulty rating: Easy
 
 Project size: ~175h
 
-Possible Mentors: Shalitha Suranga, TBD
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Suggested technical decisions
 
@@ -205,7 +205,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, TBD
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Suggested technical decisions
 
@@ -224,7 +224,7 @@ Difficulty rating: Hard
 
 Project size: ~350h
 
-Possible Mentors: TBD
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Suggested technical decisions
 
@@ -246,7 +246,7 @@ Difficulty rating: Medium
 
 Project size: ~350h
 
-Possible Mentors: Shalitha Suranga, TBD
+Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 #### Suggested technical decisions
 
