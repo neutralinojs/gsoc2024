@@ -171,6 +171,8 @@ const app = new NeutralinoApp({
               }
              });
 
+app.init(); // Initializes the app instance
+
 // Every Neutralino.window API function is available except window.create and draggable regions API
 app.window.setFullScreen();
 app.window.hide();
