@@ -53,7 +53,7 @@ Thank you for contributing to open-source 🎉
 
 Neutralinojs CLI generates platform-specific binaries for Linux, macOS, and Windows with a platform-independent resource file. Right now, Neutralinojs application developers need to use various tools to generate application installers (i.e.,: AppImage, NSIS) for each operating system. However, we have no plans to add application installer generation support to the official CLI to keep the CLI implementation minimal and less platform-dependent. Therefore, the Neutralinojs community has initiated a project called "Neutralinojs Builder" to generate application installers. The Neutralinojs builder project is still a POC and experimental, so the idea is to finalize the project based on the suggested technical specification finalized by the framework developers.
 
-Areas: Node.js, Neutralinojs, Application bundling on operating systems
+Skills required: Node.js, Neutralinojs, Application bundling on operating systems
 
 Difficulty rating: Medium
 
@@ -125,7 +125,7 @@ Neutralinojs is tested on Windows 10 and 11, but it is not well-tested
 with previous Windows versions. The goal of this idea is to update Neutralinojs framework
 source, build scripts, and DevOps workflow to officially support older Windows versions.
 
-Areas: Windows API, DevOps, and Configuration
+Skills required: Windows API, DevOps, and Configuration
 
 Difficulty rating: Medium
 
@@ -142,7 +142,7 @@ Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
 the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
 
-Areas: Node.js and Neutralinojs
+Skills required: Node.js and Neutralinojs
 
 Difficulty rating: Easy
 
@@ -201,7 +201,7 @@ The os.setTray function fails on macOS Catalina and some other versions.
 The goal of this task to debug the Neutralinojs macOS binary on different macOS versions and 
 apply a generic solution.
 
-Areas: Cocoa API and Debugging
+Skills required: Cocoa API and Debugging
 
 Difficulty rating: Medium
 
@@ -220,7 +220,7 @@ Issue: https://github.com/neutralinojs/roadmap/issues/1
 Add the `transparent` (Boolean) option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `true`, and the 
 CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. Transparency can be disabled by setting the `transparent` property to `false`. The developer can adjust the window transparency level with CSS. 
 
-Areas: GTK, Cocoa, Win32 APIs
+Skills required: GTK, Cocoa, Win32 APIs
 
 Difficulty rating: Hard
 
@@ -242,7 +242,7 @@ Issue: https://github.com/neutralinojs/neutralinojs/issues/706
 Neutralinojs project has a integration test suite for testing both C++ and JavaScript code at once. Currently, Neutralinojs integration tests covers minimal tests 
 to detect possible function breakdowns. The goal of this task is to write a complete test suite covering all aspects of Neutralinojs APIs and global variables. Also, we expect to run the test suite on Windows CI instance too.
 
-Areas: Neutralinojs, Unit/Integration testing, Node.js and GitHub Actions
+Skills required: Neutralinojs, Unit/Integration testing, Node.js and GitHub Actions
 
 Difficulty rating: Medium
 
