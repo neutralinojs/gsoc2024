@@ -213,29 +213,7 @@ Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 
 - Add additional configuration code to the [webview fork](https://github.com/neutralinojs/webview) rather than updating `window.cpp` if possible.
 
-### 5. Adding window transparent setting to the configuration
-
-Issue: https://github.com/neutralinojs/roadmap/issues/1
-
-Add the `transparent` (Boolean) option to the configuration to control the webview's opacity on all supported platforms. When the setting is set to `true`, and the 
-CSS background also has `opacity` as `0`, the user should be able to see through the window clearly. Transparency can be disabled by setting the `transparent` property to `false`. The developer can adjust the window transparency level with CSS. 
-
-Skills required: GTK, Cocoa, Win32 APIs
-
-Difficulty rating: Hard
-
-Project size: ~350h
-
-Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
-
-#### Suggested technical decisions
-
-- Try to implement the solution within [`window.cpp`](https://github.com/neutralinojs/neutralinojs/blob/main/api/window/window.cpp)
-- Add implementation via a new function named `setTransparent()` under the `window` namespace. Invoke from `__createWindow`.
-- Use `false` as the default value.
-- Add as a CLI argument too (`--window-transparent`)
-
-### 6. C++/JavaScript integration test system enhancements
+### 5. C++/JavaScript integration test system enhancements
 
 Issue: https://github.com/neutralinojs/neutralinojs/issues/706
 
