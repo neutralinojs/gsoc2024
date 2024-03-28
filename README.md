@@ -140,7 +140,8 @@ Mentors: Shalitha Suranga, Athif Shaffy, and Sainath Rao
 ### 3. NodeNeutralino: a community project to explain Neutralinojs custom backends
 
 The goal is to create a sample wrapper project to guide developers to use a Node.js backend for a Neutralinojs app with
-the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API.
+the extension API. This project will use Neutralinojs via Node.js child process API and communicate with the Neutralinojs extension API. The NodeNeutralino project's 
+goal is to show developers how to create Neutralinojs API bindings for any language. Using the NodeNeutralino project idea, developers can create GoNeutralino, RustNeutralino, PyNeutralino, etc. i.e., PyNeutralino exposes `app.window.show()`-like Neutralinojs functions in Python. 
 
 Skills required: Node.js and Neutralinojs
 
@@ -160,7 +161,7 @@ Example NodeNeutralino app code:
 const { NeutralinoApp } = require('node-neutralino');
 
 // Accepts all configuration options available in Neutralino.window.create
-// Don't manipulate the config file -- use internal CLI arguments instead.
+// Don't manipulate the config file -- use internal CLI arguments instead. (If we update the config, NodeNeutralino will fail to work properly after 'neu build')
 const app = new NeutralinoApp({
               url: '/resources', 
               modes: {
@@ -190,8 +191,19 @@ app.exit();
 - Try to implement without any third-party Node module.
 - Make every function asynchronous and throw Neutralinojs [error codes](https://neutralino.js.org/docs/api/error-codes) properly.
 - Use Node.js [child process API](https://nodejs.org/api/child_process.html#child_processspawncommand-args-options) to spawn Neutralinojs binaries.
-- Create an app template for Neutralinojs CLI.
-- Use a project structure similar to the Neutralinojs client library.
+- Create an app template for Neutralinojs CLI, so Node.js developers can easily use it via `neu create` (i.e., `neu create -t neutralinojs/node`).
+- Use a well-manageable project structure similar to the Neutralinojs client library.
+- Update neu CLI to automate the development of NodeNeutralino-like templates with the following JSON structure in the `cli` section if `neutralino.config.json`:
+```js
+ "runnerProject": {
+      "type": "node",
+      "projectPath": "/node-src/",
+      "initCommand": "npm install",   // Executed with `neu create`
+      "devCommand": "npm start",      // Executed with `neu run`
+      "buildCommand": "npm run build" // Executed with `neu build`
+  }
+```
+- Once developers executed the `neu build` command, they can run the Node.js project as usual to start the NodeNeutralino app.
 
 ### 4. Fix `os.setTray` function problem for older macOS versions
 
