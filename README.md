@@ -130,8 +130,10 @@ We really appreciate your code contributions. Please read [this contribution gui
   <img src="https://contrib.rocks/image?repo=neutralinojs/gsoc2025" />
 </a>
 
+Image created with [contrib.rocks](https://contrib.rocks).
+
 ## Past programs
 
-- [GSoC 2022](https://summerofcode.withgoogle.com/programs/2025/organizations/neutralinojs)
+- [GSoC 2024](https://summerofcode.withgoogle.com/programs/2024/organizations/neutralinojs)
+- [GSoC 2022](https://summerofcode.withgoogle.com/programs/2022/organizations/neutralinojs)
 
-Image created with [contrib.rocks](https://contrib.rocks).
